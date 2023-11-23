@@ -1,0 +1,149 @@
+/*Colors*/
+/*
+--text: #ffffff;
+--background: #202430;
+--primary: #5761f7;
+--secondary: #4bdfff;
+--accent: #a6ff81;
+*/
+/*FONTS*/
+/*
+    font-family: 'Ubuntu', sans-serif;  Headers
+    font-family: 'Poppins', sans-serif; Body
+*/
+
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #b3b6d8;
+    background-color: #1d2029;
+    height: 100%;
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1d2029;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #2f3545;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*Start of Format*/
+#flex-box {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    text-align: center;
+    flex-grow: 2;
+    padding-left: 1em;
+}
+
+/*Top Bar*/
+#top-bar {
+    position: sticky;
+    top: 0;
+    background-color: #1d2029;
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin-right: 0;
+    margin-left: 0;
+    height: 4em;
+}
+
+#top-bar h3{
+    flex-grow: 2;
+    margin-top: 1em;
+    color: #585867;
+    font-family: Roboto;
+}
+
+#menu-button {
+    margin-top: -0.5em;
+    color: #585867;
+    font-size: 1.5em;
+    background-color: #1d2029;
+    border-style: none;
+    transition: all 0.5s ease;
+}
+
+#menu-button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*Side Menu Bar*/
+#menu-bar {
+    position: sticky;
+    top: 0;
+    background-color: #2f3545;
+    width: 15em;
+    height: 100vmin;
+    margin-left: 0;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+#menu-bar ul {
+    list-style-type: none;
+    padding-top: 1em;
+    padding-left: 1em;
+    overflow-x: hidden;
+}
+
+.menu-content {
+    padding-bottom: 0.5em;
+    overflow-x: hidden;
+    width: 14em;
+}
+
+.menu-content a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9em;
+    overflow-x: hidden;
+}
+
+.menu-content a:hover{
+    color: #4bdfff;
+}
+
+/*Format for actual info*/
+#content section {
+    width: 40em;
+    text-align: left;
+    line-height: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content section h1 {
+    font-size: 30px;
+}
+
+#content section p {
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 1920px) {
+    #menu-button {
+        margin-top: -0.3em;
+    }
+}
